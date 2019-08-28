@@ -19,6 +19,13 @@
     navigator.serviceWorker.register('/liv/sw.js', {scope: '/liv/'})
   }
   
+				window.addEventListener('beforeinstallprompt', (e) => {
+				  // Stash the event so it can be triggered later.
+				  deferredPrompt = e;
+				  // Update UI notify the user they can add to home screen
+				  showInstallPromotion();
+				});
+		
   // --- Application code here ---
   </script>
 </body>
