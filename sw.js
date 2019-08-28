@@ -1,6 +1,6 @@
 var APP_PREFIX = 'Liv_'     // Identifier for this app (this needs to be consistent across every cache update)
 var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
-var CACHE_NAME = LIV + 01
+var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   '/liv/',                     // If you have separate JS/CSS files,
   '/liv/index.html'            // add path to those files here
